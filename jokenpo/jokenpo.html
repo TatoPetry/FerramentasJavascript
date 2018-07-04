@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JOKENPO</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="body">
+    <div class="container">
+        <h1>Pedra Papel Tesoura</h1>
+        <div class="placar">
+
+            <div class="jogador-area">
+                <h2>Jogador</h2>
+                <p><span id="contador-jogador">0</span></p>
+                <ul class="jogador-escolhas">
+                    <li class="jogador-li">
+                        <a href="#" class="jogador-opcao" onclick="jogada(1)">
+                            <img src="img/papel.png" alt="papel" class="jogador1 imagem imgref">
+                        </a>
+                    </li>
+                    <li class="jogador-li">
+                        <a href="#" class="jogador-opcao" onclick="jogada(2)">
+                            <img src="img/pedra.png" alt="pedra" class="jogador2 imagem imgref">
+                        </a>
+                    </li>
+                    <li class="jogador-li">
+                        <a href="#" class="jogador-opcao" onclick="jogada(3)">
+                            <img src="img/tesoura.png" alt="tesoura" class="jogador3 imagem imgref">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="computador-area">
+                <h2>Computador</h2>
+                <p><span id="contador-computador">0</span></p>
+                <ul class="computador-escolhas">
+                    <li class="computador-li">
+                        <a href="#" class="computador-opcao">
+                            <img src="img/papel.png" alt="" class="computador1 imagem imgref">
+                        </a>
+                    </li>
+                    <li class="computador-li">
+                        <a href="#" class="computador-opcao">
+                            <img src="img/pedra.png" alt="" class="computador2 imagem imgref">
+                        </a>
+                    </li>
+                    <li class="computador-li">
+                        <a href="#" class="computador-opcao">
+                            <img src="img/tesoura.png" alt="" class="computador3 imagem imgref">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <h2 class="resultado">Resultado: <spam id="resultado"></spam> </h2>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

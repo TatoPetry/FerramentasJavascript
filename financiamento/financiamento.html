@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gerador Financiamento</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador Financiamento</h1>
+        <form action="" class="form-container">
+            <div class="container-input">
+                <label for="">Montante</label>
+                <input type="text" id="input-montante" placeholder="Digite aqui o valor total">
+            </div>
+            <div class="container-input">
+                    <label for="">Taxa</label>
+                    <input type="text" id="input-taxa" placeholder="Digite aqui taxa de juros">
+            </div>
+            <div class="container-input">
+                <label for="">Prazo</label>
+                <input type="text" id="input-prazo" placeholder="Digite aqui o n de parcelas">
+            </div>
+            <button id="btn-calcular">Calcular</button>
+        </form>
+    </div>
+    <div class="container-table">
+        <table class="table">
+            <thead>
+                <tr class="table-tr">
+                    <th>Parcela atual</th>
+                    <th>Amortização</th>
+                    <th>Saldo devedor</th>
+                    <th>Juros</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </div>
+    <script src="js/financiamento.js"></script>
+    
+</body>
+</html>

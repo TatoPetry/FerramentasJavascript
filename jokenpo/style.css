@@ -1,0 +1,81 @@
+.container{
+    margin: auto;
+    width: 600px;
+}
+
+h1{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.placar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.jogador-area, .computador-area{
+    position: relative;
+    flex-grow: 1;
+    border-radius: 10px;
+    width: 200px;
+    padding: 20px;
+    color: white;
+    margin: 20px;
+}
+
+.jogador-area{
+    background-color: lightgreen;
+}
+
+.computador-area{
+    background-color: lightblue;
+}
+
+.jogador-li, .computador-li{
+    display:inline-block;
+}
+
+.imagem{
+    opacity: 0.2;
+}
+
+.jogador-li a img:hover, .computador-li a img:hover{
+    opacity: 1;
+}
+
+.jogador-area p{
+    position: absolute;
+    top: 32px;
+    right: 30px;
+}
+
+.computador-area p{
+    position: absolute;
+    top: 32px;
+    right: 30px;
+}
+
+.resultado{
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    background-color: lightslategray;
+}
+
+.jogada-ativa{
+    opacity: 1;
+}
+
+.area-vencedor{
+    border: 4px solid lightgoldenrodyellow;
+}
+
+.area-perdedor{
+    border: 4px solid lightcoral;
+}
