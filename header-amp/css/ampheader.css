@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.none{
+    display: none;
+}
+.header-container{
+  width: 100%;
+  height: 8em; 
+  
+}
+.valvulas-container{
+    background-color: black;
+    display: flex;
+    height: 8em; 
+    justify-content: space-around;
+    align-items: flex-end;
+
+}
+.valvula-power{
+    background: black;    
+    border-radius: 90px 90px 0 0;
+    width: 3em;
+    height: 7em;
+    opacity: 0.7;
+
+}
+
+.valvula-pre{
+    background: black;
+    border: 2px 2px 0 2px solid white;
+    border-radius: 90px 90px 0 0;
+    width: 2em;
+    height: 5em;
+    opacity: 0.7; 
+    
+}
+
+#liga:checked ~ .header-container .valvulas-container .valvula-pre{
+    
+    animation: pulse 5s ease infinite;
+    
+}
+#liga:checked ~ .header-container .valvulas-container .valvula-power{
+    animation: pulse 3s infinite;
+    
+}
+
+@keyframes pulse{
+    0%{
+        background: radial-gradient(white 5%, yellow 95%);
+        box-shadow: 0 0 50px white;
+        
+    }
+    25%{
+        background: radial-gradient(white 20%, yellow 95%);
+        box-shadow: 0 0 80px white; 
+        
+    }
+    50%{
+        background: radial-gradient(white 35%, yellow 95%);
+        box-shadow: 0 0 100px white;
+        
+    }
+    75%{
+        background: radial-gradient(white 20%, yellow 95%);
+        box-shadow: 0 0 80px white;
+        
+    }
+    100%{
+        background: radial-gradient(white 5%, yellow 95%);
+        box-shadow: 0 0 50px white;
+         
+    }
+}
+
+
+.painel-container{
+    background: goldenrod;
+    width: 100%;
+    height: 6em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+
+.btn-onoff{
+    width: 3em;
+    height: 4.6em;
+    cursor: pointer;
+}
+
+.liga{
+    width: 100%;
+    height: 2.3em;
+    background: darkred;
+}
+.ligadoo{
+    box-shadow: 0 0 70px red;
+    background: red;
+}
+
+.desliga{
+    width: 100%;
+    height: 2.3em;
+    background: red;
+}
+
+.knob-menu{
+    width: 5em;
+    height: 5em;
+    
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+.titulo-knob{
+    
+}
+.knob{
+    width: 3.5em;
+    height: 3.5em;
+    border: 2px solid black;
+    border-radius: 50%;    
+}
+.input-plug{
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input-plug-interno{
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 2px solid black;
+    background: black;
+
+}

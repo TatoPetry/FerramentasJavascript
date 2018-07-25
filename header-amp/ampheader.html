@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/ampheader.css">
+    <title>Document</title>
+</head>
+<body>
+    <input class="none" type="checkbox" name="on" id="liga">
+    <audio class="none" id="player" src="src/amperesrock-e-preciso.ogg" autoplay controls>
+    <p>seu navegador não suporta</p></audio>
+    <div class="header-container imglogo img-logo-recorte">
+        <div class="valvulas-container">
+            <div class="valvula-power"></div>
+            <div class="valvula-power"></div>
+            <div class="valvula-pre"></div>
+            <div class="valvula-pre"></div>
+            <div class="valvula-pre"></div>
+            <div class="valvula-pre"></div>
+        </div>
+
+
+        <div class="painel-container">
+            <div class="btn-onoff" for="on" onclick="playerClick()">
+                <div class="liga" id="on-off"></div>                
+                <div class="desliga"></div>
+            </div>
+            <div class="knob-menu">
+                <div class="titulo-knob">Sobre</div>
+                <a class="knob"href=""></a>
+            </div>
+            <div class="knob-menu">
+                    <div class="titulo-knob">Musicas</div>
+                    <a class="knob" href="#"></a>
+            </div>
+            <div class="knob-menu">
+                        <div class="titulo-knob">Fotos</div>
+                        <a class="knob" href="#"></a>
+            </div>
+            <div class="knob-menu">
+                    <div class="titulo-knob">Agenda</div>
+                    <a class="knob" href="#"></a>
+            </div> 
+            <div class="input-plug">
+                <div class="input-plug-interno"></div>
+            </div>   
+
+        </div>
+
+    </div>
+    
+    <script src="js/ampheader-audio.js"></script>
+</body>
+</html>
