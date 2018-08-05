@@ -107,6 +107,10 @@
     background: red;
 }
 
+
+/*Controle knob*/
+
+
 .knob-menu{
     width: 5em;
     height: 5em;
@@ -114,17 +118,33 @@
     text-align: center;
     display: flex;
     flex-flow: column;
-    align-items: center;
+    align-items: center;    
 }
-.titulo-knob{
-    
-}
+
 .knob{
     width: 3.5em;
     height: 3.5em;
-    border: 2px solid black;
-    border-radius: 50%;    
+    padding: 4px;
+    border: 5px solid black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    transition: 3s;
+    transform: rotate(-140deg);
+        
 }
+.knob:hover{
+    transform: rotate(140deg); 
+}
+.knob-indicador{
+    background: black;
+    border: 2px solid black;
+    width: 5px;
+    
+        
+}
+
+/*Controle Input*/
+
 .input-plug{
     width: 1.5em;
     height: 1.5em;
